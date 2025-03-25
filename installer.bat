@@ -1,4 +1,9 @@
 @echo off
+net session >nul 2>&1 || (
+    echo This file needs to be run with administrator privileges.
+    pause
+    exit /b
+)
 set "fileName=temp-cleaner.bat"
 set "destination=%AppData%\Microsoft\Windows\Start Menu\Programs\Startup"
 
