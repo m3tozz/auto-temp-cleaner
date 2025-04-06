@@ -12,7 +12,7 @@ echo md %%temp%% >> "%fileName%"
 
 if exist "%fileName%" (
     move "%fileName%" "%destination%"
-    echo .bat file has been successfully created and moved.
+    echo Automatic Temp Cleaner file has been successfully added to your system.
 ) else (
     echo File could not be created!
 )
